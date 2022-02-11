@@ -12,12 +12,14 @@
 <h2>Introducción a la página</h2>
 <p><br/></p>
 <p> Como decía <strong><acronym title="Chayanne probablemente"> Nombre Genérico</acronym></strong>: </p>
-<blockquote> "Los juegos de pago están para ser pirateados, siendo accesibles
-    a la gente que tiene poco dinero, porque jugar siendo pobre es de los pocos
-    placeres que estas
-    <del>RATAS</del>
-    <ins>personas pobres</ins>
-    pueden disfrutar en la vida"
+<blockquote>
+    <p> "Los juegos de pago están para ser pirateados, siendo accesibles
+        a la gente que tiene poco dinero, porque jugar siendo pobre es de los pocos
+        placeres que estas
+        <del>RATAS</del>
+        <ins>personas pobres</ins>
+        pueden disfrutar en la vida"
+    </p>
 </blockquote>
 <p><br/></p>
 <p>Este texto tan <strong><dfn title="ᵃᵐᵒᵍᵘˢ ඞ">sus</dfn></strong>picaz nos hace cuestionarnos como deberían de ser los
@@ -77,42 +79,72 @@
     </li>
     <li><h3>Juegos añadidos recientemente</h3></li>
 </ul>
-<p><img src="Akane.jpg" alt="Akane portada" height="200" width="100"></img> &nbsp;&nbsp;&nbsp; <img src="ImpostorFactory.jpg" alt="Impostor Factory Portada" height ="200" width="100"></img> </p>
-<ul><li><h3>Formulario de Registro</h3></li></ul>
+<p><dfn title="AKANE"><img src="Akane.jpg" alt="Akane portada" height="200" width="100"></img></dfn> &nbsp;&nbsp;&nbsp;
+    <dfn title="Impostor Factory"><img src="ImpostorFactory.jpg" alt="Impostor Factory Portada" height="200"
+                                       width="100"></img></dfn></p>
+<ul>
+    <li><h3>Formulario de Registro</h3></li>
+</ul>
 <form action="XHTML.xhtml">
-    Nombre:
-<p><input type="text" name="Nombre" value=""></input></p>
-    Apellido:
-           <p><input type="text" name="Apellidos" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Numero de la seguridad social" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="DNI" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Numero de tarjeta de credito" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="CVV" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Mes de caducidad" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Año de caducidad" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Cuantos riñones te quedan" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Tiene pasaporte covid?" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Pertenece a alguna mafia?" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Patrimonio en $" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="password" name="Contraseña" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="password" name="Confirmacion de contraseña" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Telefono de contacto" value=""></input></p>
-    Numero De la seguridad social:
-    <p><input type="text" name="Correo electronico para llenarle de publicidad (#honestidad)" value=""></input></p>
-         <p><input type="submit" value="Enviar"></input></p>
+    <fieldset>
+        <legend><strong>Datos personales:</strong></legend>
+        Nombre:
+        <input type="text" name="Nombre" value="" size="5"></input> &nbsp;&nbsp;&nbsp;
+        Apellidos:
+        <input type="text" name="Apellidos" value="" size="20"></input> &nbsp;&nbsp;&nbsp;
+        Numero de la seguridad social:
+           <input type="text" name="Numero de la seguridad social" value="" size="4"></input><br/><br/>
+        DNI:
+        <input type="text" name="DNI" value="" size="4"></input>&nbsp;&nbsp;&nbsp;
+        Riñones restantes:
+        <input type="text" name="Cuantos riñones te quedan" value="" size="1"></input><br/><br/>
+        Sexo:
+        <p> <input type="radio" name="sexo" value="hombre"></input>Hombre </p>
+        <p> <input type="radio" name="sexo" value="mujer"></input>Mujer</p>
+        <p> <input type="radio" name="sexo" value="????"/>No se biologia </p>
+
+        Pertenencia a una mafia:
+        <p><input type="radio" name="Pertenece mafia" value="si"></input>Si</p>
+        <p><input type="radio" name="Pertenece mafia" value="no"></input>No</p>
+        Pasaporte covid:
+        <p><input type="radio" name="Tiene pasaporte covid" value="si"></input>Si</p>
+        <p><input type="radio" name="Tiene pasaporte covid" value="no"></input>No</p>
+        Telefono de contacto:
+        <p><input type="text" name="Telefono de contacto" value="" size="8"></input></p>
+        Correo electronico para llenarle de publicidad (#honestidad):
+        <p><input type="text" name="Correo electronico para llenarle de publicidad (#honestidad)" value=""
+                  size="40"></input></p>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Datos economicos:</strong></legend>
+        Numero de la tarjeta de credito:
+        <p><input type="text" name="Numero de tarjeta de credito" value="" size="20"></input></p>
+
+        Numero CVV:
+        <p><input type="text" name="CVV" value="" size="1"></input></p>
+        Mes de caducidad:
+        <p><input type="text" name="Mes de caducidad" value="" size="1"></input></p>
+        Año de caducidad:
+        <p><input type="text" name="Año de caducidad" value="" size="1"></input></p>
+        Patrimonio en $$$:
+        <p><input type="text" name="Patrimonio en $" value="" size="4"></input></p>
+
+
+    </fieldset>
+    <fieldset>
+        <legend><strong>Datos de registro:</strong></legend>
+        Usuario:
+        <p><input type="text" name="Usuario" value="" size="6"/></p>
+        Contraseña:
+        <p><input type="password" name="Contraseña" value="" size="10"></input></p>
+        Confirmacion de contraseña:
+        <p><input type="password" name="Confirmacion de contraseña" value="" size="10"></input></p>
+    </fieldset>
+
+
+    <p> Aceptas terminos y condiciones al pulsar el siguiente boton:</p>
+    <p><input type="hidden" name="Acepto todos los terminos y condiciones"/></p>
+    <p><input type="submit" value="Enviar" size="10"></input></p>
 </form>
 
 </body>
